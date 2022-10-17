@@ -5,8 +5,12 @@ export default function Book({item}){
     const bookStyle = {
         display: 'flex',
         flexDirection: 'column',
-        width: '300px'
+        width: '300px',
     };
+
+    const imagestyle = {
+        with: '200px'
+    }
 
     const bookInfo = {
         display: 'flex',
@@ -14,13 +18,13 @@ export default function Book({item}){
         alignItems: 'center',
         textAlign: 'center',
         color: 'white',
-        textDecoration: 'none'
+        textDecoration: 'none',
     }
 
     return(
         <div style={bookStyle}>
             <Link to={`/view/${item.id}`} style={bookInfo}>
-                <img src={item.cover} alt={item.title} />
+                <img style={imagestyle} src={item.cover} alt={item.title} />
                 <div>{item.title}</div>
             </Link>
         </div>

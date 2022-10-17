@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 export default function Layout({children}){
 
     const containerStyle = {
-        width: '90px',
+        width: '300px',
         margin: '100px auto'
     }
 
